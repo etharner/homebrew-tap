@@ -23,7 +23,7 @@ class Pyside < Formula
 
   depends_on "cmake" => :build
   depends_on "sphinx-doc" => :build if build.with? "docs"
-  depends_on "qt"
+  depends_on "qt4-no-webkit"
 
   if build.with? "python3"
     depends_on "shiboken" => "with-python3"
